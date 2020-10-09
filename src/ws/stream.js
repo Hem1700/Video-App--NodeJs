@@ -4,7 +4,7 @@ const stream = (socket)=>{
        socket.join(data.room)
        socket.join(data.socketId)
        //Inform other membeers in the room of the new user's arrival 
-       if(socket.adaprer.rooms[data.room].length>1){
+       if(socket.adapter.rooms[data.room].length>1){
            socket.to(data.room).emit('new user' , {socketId:data.socketId})
        }
 
