@@ -7,7 +7,7 @@ let path = require('path')
 
 let port = 3000
 
-let favicon = require('serve-favicon')
+
 
 
 app.use('/assets' , express.static(path.join(__dirname , 'assets')))
